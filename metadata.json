@@ -1,0 +1,32 @@
+{
+  "id": "hhl-algorithm",
+  "name": "HHL Algorithm (2\u00d72 Linear System)",
+  "category": "simulation",
+  "description": "Harrow-Hassidim-Lloyd algorithm: solve Ax=b for a 2\u00d72 system A=diag(1,2), b=|0\u27e9 using 4 qubits.",
+  "long_description": "The HHL algorithm solves sparse linear systems Ax=b exponentially faster than classical algorithms in certain regimes. It applies QPE to encode eigenvalues \u03bb, performs a conditional rotation 1/\u03bb on an ancilla, then uncomputes with inverse QPE. Post-selecting ancilla=|1\u27e9 yields |x\u27e9 \u221d A\u207b\u00b9|b\u27e9. For A=diag(1,2) with eigenvalues 1 and 2, b=|0\u27e9 is an eigenstate so x=A\u207b\u00b9b=|0\u27e9. This circuit is a pedagogical 4-qubit simplification.",
+  "difficulty": "advanced",
+  "qubit_count": 4,
+  "clbit_count": 1,
+  "gate_count": 18,
+  "depth": 12,
+  "tags": [
+    "hhl",
+    "linear-systems",
+    "quantum-simulation",
+    "exponential-speedup"
+  ],
+  "circuit_formats": [
+    "qasm2"
+  ],
+  "source_file": "circuit.qasm",
+  "expected_output": "Post-select ancilla=1 to obtain |x\u27e9 \u221d A\u207b\u00b9|b\u27e9",
+  "references": [
+    {
+      "title": "Harrow, Hassidim, Lloyd (2009). Quantum Algorithm for Linear Systems of Equations. PRL 103, 150502",
+      "url": "https://doi.org/10.1103/PhysRevLett.103.150502"
+    }
+  ],
+  "author": "OpenQC Community",
+  "license": "MIT",
+  "version": "1.0.0"
+}
