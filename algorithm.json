@@ -1,0 +1,29 @@
+{
+  "slug": "hhl-linear-solver",
+  "name": "HHL Algorithm",
+  "version": "1.0.0",
+  "author": "iniestarchen",
+  "license": "Apache-2.0",
+  "description": "Solve Ax=b for a 2x2 system using the Harrow-Hassidim-Lloyd algorithm.",
+  "industries": [
+    "ml",
+    "optimization"
+  ],
+  "techniques": [
+    "gate"
+  ],
+  "difficulty": "advanced",
+  "computation_model": "gate",
+  "algorithm_type": "circuit",
+  "qubit_count": 4,
+  "tags": [
+    "hhl",
+    "linear-algebra",
+    "matrix-inversion"
+  ],
+  "access": "open",
+  "source": "official",
+  "metadata": {
+    "year_introduced": 2009
+  }
+}
